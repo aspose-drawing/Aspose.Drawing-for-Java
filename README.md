@@ -1,6 +1,6 @@
-# 2D Graphics Drawing for Java Examples (coming soon)
+# 2D Graphics Drawing for Java Examples
 
-[Aspose.Drawing for Java](https://products.aspose.com/drawing/java) is a comprehensive 2D graphic library that is fully managed, cross-platform, and compatible with Java 6. It empowers users to draw text, geometries, and images in various scenarios, including Web, Mobile, Desktop, or Cloud applications. The drawing engine excels in rendering vector graphics, encompassing lines, curves, and figures, as well as text in diverse fonts, sizes, and styles. It seamlessly outputs the results onto raster images, supporting popular graphics file formats.
+[Aspose.Drawing for Java](https://products.aspose.com/drawing/java) is a coming soon comprehensive 2D graphic library that is fully managed, cross-platform, and compatible with Java 6. It empowers users to draw text, geometries, and images in various scenarios, including Web, Mobile, Desktop, or Cloud applications. The drawing engine excels in rendering vector graphics, encompassing lines, curves, and figures, as well as text in diverse fonts, sizes, and styles. It seamlessly outputs the results onto raster images, supporting popular graphics file formats.
 <p align="center">
 
   <a title="Download complete Aspose.Drawing for Java examples source code" href="https://github.com/aspose-drawing/Aspose.Drawing-for-Java/archive/master.zip">
@@ -55,4 +55,4 @@ graphics.drawArc(pen, 0, 0, 700, 700, 0, 180);
 bitmap.save("DrawArc.png");
 ```
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/drawing/java) | [Docs](https://docs.aspose.com/drawing/java/) | [API Reference](https://apireference.aspose.com/drawing/java) | [Examples](https://github.com/aspose-drawing/Aspose.Drawing-for-Java/tree/master/Examples) | [Blog](https://blog.aspose.com/category/drawing/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/drawing) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/drawing/java) | [Docs](https://docs.aspose.com/drawing/java/) | [API Reference](https://reference.aspose.com/drawing/java) | [Examples](https://github.com/aspose-drawing/Aspose.Drawing-for-Java/tree/master/Examples) | [Blog](https://blog.aspose.com/category/drawing/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/drawing) | [Temporary License](https://purchase.aspose.com/temporary-license)
