@@ -1,7 +1,9 @@
 package main.java.com.aspose.drawing.examples.Pens;
 
-import com.aspose.drawing.*;
-import com.aspose.drawing.drawing2d.GraphicsPath;
+import com.aspose.drawing.Bitmap;
+import com.aspose.drawing.Color;
+import com.aspose.drawing.Graphics;
+import com.aspose.drawing.Pen;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,17 +26,7 @@ public class Colors {
 
         bitmap.save(createFileIfNotExist("Colors.png"));
     }
-    static void drawPath(Graphics graphics, int join, int y)
-    {
-        Pen pen = new Pen(Color.getBlue(), 30);
-        GraphicsPath path = new GraphicsPath();
-        path.startFigure();
-        path.addLine(100, y, 200, y);
-        path.addLine(200, y, 200, y + 100);
-        pen.setLineJoin(join);
-        graphics.drawPath(pen, path);
-    }
-    private static String createFileIfNotExist(String s) {
+        private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

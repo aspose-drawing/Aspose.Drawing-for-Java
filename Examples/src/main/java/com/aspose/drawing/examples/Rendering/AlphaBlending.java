@@ -19,13 +19,6 @@ public class AlphaBlending {
 
         bitmap.save(createFileIfNotExist("AlphaBlending.png"));
     }
-    static void drawText(Graphics graphics, String familyName, int y)
-    {
-        Brush brush = new SolidBrush(Color.getBlack());
-        Font font = new Font(familyName, 10, FontStyle.Regular);
-        String text = "The quick brown fox jumps over the lazy dog. 0123456789 ~!@#$%^&*()_+-={}[];':\"<>?/,.\\¹`";
-        graphics.drawString(text, font, brush, 100, y);
-    }
 
     private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);

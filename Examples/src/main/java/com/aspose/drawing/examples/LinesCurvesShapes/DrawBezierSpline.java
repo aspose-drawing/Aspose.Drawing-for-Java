@@ -16,7 +16,7 @@ public class DrawBezierSpline {
         PointF c1 = new PointF(0, 800);   // first control point
         PointF c2 = new PointF(1000, 0);  // second control point
         PointF p2 = new PointF(1000, 800);  // end point
-        graphics.drawBezier(pen, p1, c1, c2, p2);;
+        graphics.drawBezier(pen, p1, c1, c2, p2);
 
         bitmap.save(createFileIfNotExist("DrawBezierSpline.png"));
     }

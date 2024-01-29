@@ -42,7 +42,6 @@ public class gears_with_callout_out {
         int spaceSize = 3;
 
         textSize.setWidth(textSize.getWidth() + diameterSymbolSize + spaceSize);
-        ;
 
         float callOutMiddleX = endAnchor.getX() > startAnchor.getX() ? endAnchor.getX() - textSize.getWidth() : endAnchor.getX() + textSize.getWidth();
         float callOutMiddleY = endAnchor.getY() > startAnchor.getY() ? endAnchor.getY() - textSize.getHeight() : endAnchor.getY() + textSize.getHeight();
