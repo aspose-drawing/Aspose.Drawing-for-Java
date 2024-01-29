@@ -15,10 +15,10 @@ public class DrawPolygon {
         graphics.drawPolygon(pen, new Point[] { new Point(100, 100), new Point(500, 700), new Point(900, 100) });
 
 
-        bitmap.save(createFileIfNotExinst("DrawPolygon.png"));
+        bitmap.save(createFileIfNotExist("DrawPolygon.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

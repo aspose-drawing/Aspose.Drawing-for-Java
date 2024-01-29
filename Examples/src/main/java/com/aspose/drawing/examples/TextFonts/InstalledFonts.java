@@ -27,7 +27,7 @@ public class InstalledFonts {
             graphics.drawString(fonts.getFamilies()[i].getName(), arial, brush, 100, (i + 2) * 100);
         }
 
-        bitmap.save(createFileIfNotExinst("InstalledFonts.png"));
+        bitmap.save(createFileIfNotExist("InstalledFonts.png"));
     }
     static void drawText(Graphics graphics, String familyName, int y)
     {
@@ -37,7 +37,7 @@ public class InstalledFonts {
         graphics.drawString(text, font, brush, 100, y);
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

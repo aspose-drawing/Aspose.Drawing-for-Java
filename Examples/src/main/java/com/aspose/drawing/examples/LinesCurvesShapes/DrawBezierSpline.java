@@ -18,10 +18,10 @@ public class DrawBezierSpline {
         PointF p2 = new PointF(1000, 800);  // end point
         graphics.drawBezier(pen, p1, c1, c2, p2);;
 
-        bitmap.save(createFileIfNotExinst("DrawBezierSpline.png"));
+        bitmap.save(createFileIfNotExist("DrawBezierSpline.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

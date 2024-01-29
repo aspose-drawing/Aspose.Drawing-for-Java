@@ -17,10 +17,10 @@ public class DrawArc {
         Pen pen = new Pen(Color.getBlue(), 2);
         graphics.drawArc(pen, 0, 0, 700, 700, 0, 180);
 
-        bitmap.save(createFileIfNotExinst("DrawArc.png"));
+        bitmap.save(createFileIfNotExist("DrawArc.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

@@ -23,7 +23,7 @@ public class Hinting {
         drawText(graphics, "Verdana", 300);
 
 
-        bitmap.save(createFileIfNotExinst("Hinting.png"));
+        bitmap.save(createFileIfNotExist("Hinting.png"));
     }
     static void drawText(Graphics graphics, String familyName, int y)
     {
@@ -33,7 +33,7 @@ public class Hinting {
         graphics.drawString(text, font, brush, 100, y);
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

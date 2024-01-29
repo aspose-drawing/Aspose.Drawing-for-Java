@@ -18,10 +18,10 @@ public class DrawRectangle {
         graphics.drawRectangle(pen, 10, 10, 900, 700);
 
 
-        bitmap.save(createFileIfNotExinst("DrawRectangle.png"));
+        bitmap.save(createFileIfNotExist("DrawRectangle.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

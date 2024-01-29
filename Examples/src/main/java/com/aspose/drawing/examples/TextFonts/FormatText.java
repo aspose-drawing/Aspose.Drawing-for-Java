@@ -28,7 +28,7 @@ public class FormatText {
         graphics.drawRectangle(pen, Rectangle.ceiling(rectangle));
         graphics.drawString(text, arial, brush, rectangle, stringFormat);
 
-        bitmap.save(createFileIfNotExinst("FormatText.png"));
+        bitmap.save(createFileIfNotExist("FormatText.png"));
     }
     static void drawText(Graphics graphics, String familyName, int y)
     {
@@ -38,7 +38,7 @@ public class FormatText {
         graphics.drawString(text, font, brush, 100, y);
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

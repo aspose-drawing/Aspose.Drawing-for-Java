@@ -23,7 +23,7 @@ public class gears_with_callout_out {
 
             drawCallOut(graphics, new PointF(111, 146), new PointF(29, 180), 28, "mm");
 
-            image.save(createFileIfNotExinst("gears_with_callout_out.png"));
+            image.save(createFileIfNotExist("gears_with_callout_out.png"));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -36,7 +36,7 @@ public class gears_with_callout_out {
 
         String outputValue = String.format("%d %s", value, unit);
 
-        var textSize = graphic.measureString(outputValue, font);
+        SizeF textSize = graphic.measureString(outputValue, font);
 
         int diameterSymbolSize = 12;
         int spaceSize = 3;
@@ -61,7 +61,7 @@ public class gears_with_callout_out {
         graphic.drawString(outputValue, font, brush, (int) textAnchorX + diameterSymbolSize + spaceSize, (int) (textAnchorY - textSize.getHeight()));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir(DIRECTORY) + s);
         if (file.exists()) {
             System.out.println("File already exists.");

@@ -14,10 +14,10 @@ public class DrawClosedCurve {
         Pen pen = new Pen(Color.getBlue(), 2);
         graphics.drawClosedCurve(pen, new Point[] { new Point(100, 700), new Point(350, 600), new Point(500, 500), new Point(650, 600), new Point(900, 700) });
 
-        bitmap.save(createFileIfNotExinst("DrawClosedCurve.png"));
+        bitmap.save(createFileIfNotExist("DrawClosedCurve.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

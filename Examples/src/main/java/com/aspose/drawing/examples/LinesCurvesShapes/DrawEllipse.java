@@ -18,10 +18,10 @@ public class DrawEllipse {
         graphics.drawEllipse(pen, 10, 10, 900, 700);
 
 
-        bitmap.save(createFileIfNotExinst("DrawEllipse.png"));
+        bitmap.save(createFileIfNotExist("DrawEllipse.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

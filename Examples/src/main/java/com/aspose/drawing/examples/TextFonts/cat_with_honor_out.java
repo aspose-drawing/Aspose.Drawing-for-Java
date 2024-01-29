@@ -19,7 +19,7 @@ public class cat_with_honor_out {
             graphics.setTextRenderingHint(TextRenderingHint.AntiAliasGridFit);
             graphics.setPageUnit(GraphicsUnit.Pixel);
 
-            var pen = new Pen(Color.getMagenta(), 1);
+            Pen pen = new Pen(Color.getMagenta(), 1);
 
             int gap = 2;
 
@@ -27,13 +27,13 @@ public class cat_with_honor_out {
             graphics.drawRectangle(pen, gap, gap, image.getWidth() - gap - 1, image.getHeight() - gap - 1);
 
 
-            image.save(createFileIfNotExinst("cat_with_honor_out.jpg"));
+            image.save(createFileIfNotExist("cat_with_honor_out.jpg"));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir(DIRECTORY) + s);
         if (file.exists()) {
             System.out.println("File already exists.");

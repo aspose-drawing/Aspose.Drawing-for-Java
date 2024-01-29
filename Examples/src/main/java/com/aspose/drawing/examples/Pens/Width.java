@@ -19,17 +19,9 @@ public class Width {
             graphics.drawLine(pen, 100, i * 100, 900, i * 100);
         }
 
-        bitmap.save(createFileIfNotExinst("Width.png"));
+        bitmap.save(createFileIfNotExist("Width.png"));
     }
-    static void drawText(Graphics graphics, String familyName, int y)
-    {
-        Brush brush = new SolidBrush(Color.getBlack());
-        Font font = new Font(familyName, 10, FontStyle.Regular);
-        String text = "The quick brown fox jumps over the lazy dog. 0123456789 ~!@#$%^&*()_+-={}[];':\"<>?/,.\\¹`";
-        graphics.drawString(text, font, brush, 100, y);
-    }
-
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");
@@ -56,6 +48,4 @@ public class Width {
     private static String getDataDir() {
         return "result\\";
     }
-
-
 }

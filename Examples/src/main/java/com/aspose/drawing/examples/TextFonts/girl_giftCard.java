@@ -50,13 +50,13 @@ public class girl_giftCard {
 
             graphics.drawString(text, font, brush, rectangle);
 
-            image.save(createFileIfNotExinst("girl_giftCard.jpg"));
+            image.save(createFileIfNotExist("girl_giftCard.jpg"));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir(DIRECTORY) + s);
         if (file.exists()) {
             System.out.println("File already exists.");

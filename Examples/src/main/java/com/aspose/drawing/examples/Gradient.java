@@ -17,10 +17,10 @@ public class Gradient {
         Brush brush = new LinearGradientBrush(new Point(0, 0), new Point(1000, 800), Color.getRed(), Color.getBlue());
         graphics.fillEllipse(brush, 100, 100, 800, 600);
 
-        bitmap.save(createFileIfNotExinst("gradient.png"));
+        bitmap.save(createFileIfNotExist("gradient.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

@@ -21,7 +21,7 @@ public class Antialiasing {
         graphics.drawCurve(pen, new Point[] { new Point(10, 700), new Point(250, 500), new Point(500, 10), new Point(750, 500), new Point(990, 700) });
         graphics.drawLine(pen, 20, 20, 980, 780);
 
-        bitmap.save(createFileIfNotExinst("Antialiasing.png"));
+        bitmap.save(createFileIfNotExist("Antialiasing.png"));
     }
     static void drawText(Graphics graphics, String familyName, int y)
     {
@@ -31,7 +31,7 @@ public class Antialiasing {
         graphics.drawString(text, font, brush, 100, y);
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

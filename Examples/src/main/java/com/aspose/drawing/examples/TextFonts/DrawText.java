@@ -24,7 +24,7 @@ public class DrawText {
         graphics.drawRectangle(pen, rectangle);
         graphics.drawString(text, arial, brush, RectangleF.to_RectangleF(rectangle));
 
-        bitmap.save(createFileIfNotExinst("DrawText.png"));
+        bitmap.save(createFileIfNotExist("DrawText.png"));
     }
     static void drawText(Graphics graphics, String familyName, int y)
     {
@@ -34,7 +34,7 @@ public class DrawText {
         graphics.drawString(text, font, brush, 100, y);
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

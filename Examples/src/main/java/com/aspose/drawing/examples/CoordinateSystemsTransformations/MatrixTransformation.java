@@ -28,7 +28,7 @@ public class MatrixTransformation {
         transformPath(graphics, originalRentangle, matrix);
 
 
-        bitmap.save(createFileIfNotExinst("CoordinateSystemsTransformations\\MatrixTransformations_out.png"));
+        bitmap.save(createFileIfNotExist("CoordinateSystemsTransformations\\MatrixTransformations_out.png"));
     }
 
     private static void transformPath(Graphics graphics, Rectangle originalRentangle, Matrix matrix)
@@ -41,7 +41,7 @@ public class MatrixTransformation {
         Pen pen = new Pen(Color.fromKnownColor(KnownColor.Blue), 2);
         graphics.drawPath(pen, path);
     }
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

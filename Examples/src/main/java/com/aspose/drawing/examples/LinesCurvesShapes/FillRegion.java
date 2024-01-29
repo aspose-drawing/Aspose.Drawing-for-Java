@@ -22,7 +22,7 @@ public class FillRegion {
 
         Brush brush = new SolidBrush(Color.getBlue());
         graphics.fillRegion(brush, region);
-        bitmap.save(createFileIfNotExinst("FillRegion.png"));
+        bitmap.save(createFileIfNotExist("FillRegion.png"));
     }
     static void drawText(Graphics graphics, String familyName, int y)
     {
@@ -41,7 +41,7 @@ public class FillRegion {
         pen.setLineJoin(join);
         graphics.drawPath(pen, path);
     }
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

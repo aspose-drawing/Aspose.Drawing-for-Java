@@ -19,10 +19,10 @@ public class PageTransformation {
         Pen pen = new Pen(Color.fromKnownColor(KnownColor.Blue), 0.1f);
         graphics.drawRectangle(pen, 1, 1, 1, 1);
 
-        bitmap.save(createFileIfNotExinst("CoordinateSystemsTransformations\\PageTransformation_out.png"));
+        bitmap.save(createFileIfNotExist("CoordinateSystemsTransformations\\PageTransformation_out.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

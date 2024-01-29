@@ -14,10 +14,10 @@ public class DrawCardinalSpline {
         Pen pen = new Pen(Color.getBlue(), 2);
         graphics.drawCurve(pen, new Point[] { new Point(10, 700), new Point(250, 500), new Point(500, 10), new Point(750, 500), new Point(990, 700) });
 
-        bitmap.save(createFileIfNotExinst("DrawCardinalSpline.png"));
+        bitmap.save(createFileIfNotExist("DrawCardinalSpline.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

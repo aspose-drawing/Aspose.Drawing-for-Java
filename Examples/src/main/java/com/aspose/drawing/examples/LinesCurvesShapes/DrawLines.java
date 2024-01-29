@@ -18,10 +18,10 @@ public class DrawLines {
         graphics.drawLine(pen, 10, 700, 500, 10);
         graphics.drawLine(pen, 500, 10, 990, 700);
 
-        bitmap.save(createFileIfNotExinst("DrawLines.png"));
+        bitmap.save(createFileIfNotExist("DrawLines.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");

@@ -20,10 +20,10 @@ public class DrawPath {
         path.addEllipse(10, 250, 450, 300);
         graphics.drawPath(pen, path);
 
-        bitmap.save(createFileIfNotExinst("DrawPath.png"));
+        bitmap.save(createFileIfNotExist("DrawPath.png"));
     }
 
-    private static String createFileIfNotExinst(String s) {
+    private static String createFileIfNotExist(String s) {
         File file = new File(getDataDir() + s);
         if (file.exists()) {
             System.out.println("File already exists.");
