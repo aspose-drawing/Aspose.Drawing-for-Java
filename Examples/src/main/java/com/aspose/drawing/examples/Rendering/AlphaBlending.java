@@ -45,7 +45,7 @@ public class AlphaBlending {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 
 

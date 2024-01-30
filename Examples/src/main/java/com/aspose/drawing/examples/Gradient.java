@@ -45,7 +45,7 @@ public class Gradient {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 
 

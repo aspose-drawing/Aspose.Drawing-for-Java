@@ -28,7 +28,7 @@ public class MatrixTransformation {
         transformPath(graphics, originalRentangle, matrix);
 
 
-        bitmap.save(createFileIfNotExist("CoordinateSystemsTransformations\\MatrixTransformations_out.png"));
+        bitmap.save(createFileIfNotExist("CoordinateSystemsTransformations" + File.separator + "MatrixTransformations_out.png"));
     }
 
     private static void transformPath(Graphics graphics, Rectangle originalRentangle, Matrix matrix)
@@ -66,7 +66,7 @@ public class MatrixTransformation {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 
 

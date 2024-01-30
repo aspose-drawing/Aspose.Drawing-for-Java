@@ -24,7 +24,7 @@ public class UnitsOfMeasure {
         graphics.setPageUnit(GraphicsUnit.Inch);
         graphics.drawRectangle(new Pen(Color.fromKnownColor(KnownColor.Blue), 0.125f), 1, 1, 1, 1);
 
-        bitmap.save(createFileIfNotExist("CoordinateSystemsTransformations\\UnitsOfMeasure_out.png"));
+        bitmap.save(createFileIfNotExist("CoordinateSystemsTransformations" + File.separator + "UnitsOfMeasure_out.png"));
     }
 
     private static String createFileIfNotExist(String s) {
@@ -52,7 +52,7 @@ public class UnitsOfMeasure {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 
 

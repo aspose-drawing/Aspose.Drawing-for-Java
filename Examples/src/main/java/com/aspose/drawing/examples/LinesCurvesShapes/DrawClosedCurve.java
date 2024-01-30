@@ -42,6 +42,6 @@ public class DrawClosedCurve {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 }

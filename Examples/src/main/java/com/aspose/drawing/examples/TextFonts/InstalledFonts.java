@@ -55,7 +55,7 @@ public class InstalledFonts {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 
 

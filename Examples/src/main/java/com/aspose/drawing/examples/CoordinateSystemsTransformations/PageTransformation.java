@@ -19,7 +19,7 @@ public class PageTransformation {
         Pen pen = new Pen(Color.fromKnownColor(KnownColor.Blue), 0.1f);
         graphics.drawRectangle(pen, 1, 1, 1, 1);
 
-        bitmap.save(createFileIfNotExist("CoordinateSystemsTransformations\\PageTransformation_out.png"));
+        bitmap.save(createFileIfNotExist("CoordinateSystemsTransformations" + File.separator + "PageTransformation_out.png"));
     }
 
     private static String createFileIfNotExist(String s) {
@@ -47,7 +47,7 @@ public class PageTransformation {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 
 

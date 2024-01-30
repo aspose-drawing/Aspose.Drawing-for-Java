@@ -57,6 +57,6 @@ public class Clipping {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 }

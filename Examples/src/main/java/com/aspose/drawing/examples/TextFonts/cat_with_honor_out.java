@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class cat_with_honor_out {
     private static String DIRECTORY = "TextFonts";
-    private static String SOURCE = "src\\main\\resources\\";
+    private static String SOURCE = "src" + File.separator + "main" + File.separator + "resources" + File.separator;
 
     public static void main(String[] args) {
         try {
@@ -58,6 +58,6 @@ public class cat_with_honor_out {
     }
 
     private static String getDataDir(String s) {
-        return "result\\" + s + "\\";
+        return "result" + File.separator + s + File.separator;
     }
 }

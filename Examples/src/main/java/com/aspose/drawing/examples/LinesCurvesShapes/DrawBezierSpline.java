@@ -46,6 +46,6 @@ public class DrawBezierSpline {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 }

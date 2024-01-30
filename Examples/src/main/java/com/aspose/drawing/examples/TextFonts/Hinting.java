@@ -29,7 +29,7 @@ public class Hinting {
     {
         Brush brush = new SolidBrush(Color.getBlack());
         Font font = new Font(familyName, 10, FontStyle.Regular);
-        String text = "The quick brown fox jumps over the lazy dog. 0123456789 ~!@#$%^&*()_+-={}[];':\"<>?/,.\\¹`";
+        String text = "The quick brown fox jumps over the lazy dog. 0123456789 ~!@#$%^&*()_+-={}[];':\"<>?/,." + File.separator + "¹`";
         graphics.drawString(text, font, brush, 100, y);
     }
 
@@ -58,7 +58,7 @@ public class Hinting {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 
 

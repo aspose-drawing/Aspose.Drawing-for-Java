@@ -50,7 +50,7 @@ public class FillRegion {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 
 

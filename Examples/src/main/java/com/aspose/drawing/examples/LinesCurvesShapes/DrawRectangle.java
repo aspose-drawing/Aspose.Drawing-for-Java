@@ -46,7 +46,7 @@ public class DrawRectangle {
     }
 
     private static String getDataDir() {
-        return "result\\";
+        return "result" + File.separator;
     }
 
 
