@@ -10,7 +10,7 @@ import static com.aspose.drawing.imaging.PixelFormat.Format32bppPArgb;
 
 public class AlphaBlending {
     public static void main(String[] args) {
-        Bitmap bitmap = new Bitmap(1000, 800, Format32bppPArgb);
+        Bitmap bitmap = new Bitmap(1000, 800);
         Graphics graphics = Graphics.fromImage(bitmap);
 
         graphics.fillEllipse(new SolidBrush(Color.fromArgb(128, 255, 0, 0)), 300, 100, 400, 400);

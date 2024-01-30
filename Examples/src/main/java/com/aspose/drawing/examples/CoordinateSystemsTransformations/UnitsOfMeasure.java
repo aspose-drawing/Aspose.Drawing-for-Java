@@ -10,7 +10,7 @@ import static com.aspose.drawing.imaging.PixelFormat.Format32bppPArgb;
 
 public class UnitsOfMeasure {
     public static void main(String[] args) {
-        Bitmap bitmap = new Bitmap(1000, 800, Format32bppPArgb);
+        Bitmap bitmap = new Bitmap(1000, 800);
         Graphics graphics = Graphics.fromImage(bitmap);
         graphics.clear(Color.fromKnownColor(KnownColor.Gray));
 

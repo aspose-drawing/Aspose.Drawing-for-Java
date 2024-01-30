@@ -11,7 +11,7 @@ import static com.aspose.drawing.imaging.PixelFormat.Format32bppPArgb;
 
 public class FormatText {
     public static void main(String[] args) {
-        Bitmap bitmap = new Bitmap(1000, 800, Format32bppPArgb);
+        Bitmap bitmap = new Bitmap(1000, 800);
         Graphics graphics = Graphics.fromImage(bitmap);
         graphics.setTextRenderingHint(TextRenderingHint.AntiAliasGridFit);
         graphics.clear(Color.getWhite());

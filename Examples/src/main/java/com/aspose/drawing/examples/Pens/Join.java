@@ -12,7 +12,7 @@ import static com.aspose.drawing.imaging.PixelFormat.Format32bppPArgb;
 
 public class Join {
     public static void main(String[] args) {
-        Bitmap bitmap = new Bitmap(1000, 800, Format32bppPArgb);
+        Bitmap bitmap = new Bitmap(1000, 800);
         Graphics graphics = Graphics.fromImage(bitmap);
 
         drawPath(graphics, LineJoin.Bevel, 200);
